@@ -20,6 +20,7 @@
                         <li><a href="#text__headings">Headings</a></li>
                         <li><a href="#text__paragraphs">Paragraphs</a></li>
                         <li><a href="#text__blockquotes">Blockquotes</a></li>
+                        <li><a href="#text__example">Example Article</a></li>
                         <li><a href="#text__lists">Lists</a></li>
                         <li><a href="#text__hr">Horizontal rules</a></li>
                         <li><a href="#text__tables">Tabular data</a></li>
@@ -58,7 +59,7 @@
         <main role="main">
             <section id="text">
                 <header><h1>Text</h1></header>
-
+                <hr/>
                 <article id="text__headings">
                     <header>
                         <h1>Headings</h1>
@@ -99,10 +100,80 @@
 
                     <footer><p><a href="#top">[Top]</a></p></footer>
                 </article>
+                
+                <article id="text__example">
+                    <header><h1>Example Article</h1></header>
+                    <hr/>
+                    <h1>Example Article Title</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. <a href="#">Ut enim ad minim</a> veniam,
+                        quis nostrud <em>exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat <a href="#">nulla pariatur</a>. Excepteur sint occaecat cupidatat
+                        non proident, sunt<sup>®</sup> in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <blockquote>
+                        <p class="test-class">
+                            This is a GREAT pull quote.
+                        </p>
+                        <a href="#">- Author</a>
+                    </blockquote>
+                    <p> 
+                        Neque porro quisquam est<sup><a id='fnref1' href="#fn1">1</a></sup>, qui dolorem ipsum quia H<sub>2</sub>O dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                        ut labore et <code>&lt;div&gt;code&lt;/div&gt;</code> quaerat voluptatem. Ut enim ad minima
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q> consequatur? Quis autem vel eum iure reprehenderit
+                        qui in ea <mark>mark element</mark> voluptate velit esse quam nihil molestiae consequatur<sup><a id='fnref2' href="#fn2">2</a></sup>, vel illum
+                        qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                    <pre>
+/Sites/html master  ☠ ☢
+$  <kbd>ls -gto</kbd>
+
+total 104
+-rw-r--r--   1   10779 Jun  5 16:24 index.html
+-rw-r--r--   1    1255 Jun  5 16:00 _config.yml
+drwxr-xr-x  11     374 Jun  5 15:57 _site
+-rw-r--r--   1    1597 Jun  5 14:16 README.md
+drwxr-xr-x   5     170 Jun  5 14:15 _sass
+-rw-r--r--   1     564 Jun  4 15:59 Rakefile
+drwxr-xr-x   6     204 Jun  4 15:59 _includes
+drwxr-xr-x   4     136 Jun  4 15:59 _layouts
+                    </pre>
+                    <h2>Smaller headline h2</h2>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. 
+                        <var>f</var>(<var>x</var>) = <var>a</var><sub>0</sub> + <var>a</var><sub>1</sub><var>x</var> +
+                        <var>a</var><sub>2</sub><var>x</var><sup>2</sup>, where <var>a</var><sup>2</sup> ≠ 0
+                        Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <del>This text is deleted</del> and <ins>This text is inserted</ins> Et harum quidem rerum facilis est et expedita distinctio.
+                    </p>
+                    <h3 id="paragraph-link">Smaller header h3 <a href="#paragraph-link">&para;</a></h3>
+                    <p>
+                        Neque porro quisquam est, <s>This text has a strikethrough</s> qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                    </p>
+                    <h4>Smaller header h4</h4>
+                    <p>
+                    <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/96/139.jpg" alt="Image alt text">
+
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                </article>
+                <footer>
+                    <ol>
+                        <li>
+                            <a href="#fnref1">^</a> <small id="fn1">Hey, footnotes, they happen,</small> 
+                        </li>
+                        <li>
+                            <a href="#fnref2">^</a> <small id="fn2">Footnote with a link <a href="https://en.wikipedia.org/wiki/Note_(typography)">https://en.wikipedia.org/wiki/Note_(typography)</a>.</small> 
+                        </li>
+                    </ol>
+                </footer>
 
                 <article id="text__lists">
                     <header><h1>Lists</h1></header>
-
+                    <hr/>
                     <div>
                         <h3>Definition list</h3>
                         <dl>
@@ -140,7 +211,7 @@
 
                 <article id="text__tables">
                     <header><h1>Tabular data</h1></header>
-
+                    <hr/>
                     <table>
                         <caption>Table Caption</caption>
                         <thead>
@@ -200,7 +271,7 @@
 
                 <article id="text__code">
                     <header><h1>Code</h1></header>
-
+                    <hr/>
                     <div>
                         <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
                         <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
@@ -222,7 +293,7 @@ p q r s t u v w x y z { | } ~ </pre>
 
                 <article id="text__inline">
                     <header><h1>Inline elements</h1></header>
-
+                    <hr/>
                     <div>
                         <p><a href="#!">This is a text link</a>.</p>
 
@@ -267,7 +338,7 @@ p q r s t u v w x y z { | } ~ </pre>
 
             <section id="embedded">
                 <header><h1>Embedded content</h1></header>
-
+                <hr/>
                 <article id="embedded__images">
                     <header><h2>Images</h2></header>
                     <div>
@@ -329,7 +400,7 @@ p q r s t u v w x y z { | } ~ </pre>
 
             <section id="forms">
                 <header><h1>Form elements</h1></header>
-
+                <hr/>
                 <form>
                     <fieldset id="forms__input">
                         <legend>Input fields</legend>
@@ -483,6 +554,8 @@ p q r s t u v w x y z { | } ~ </pre>
 
         <footer role="contentinfo">
             <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+            <small>© 2016 Some company name</small>
+            <address>email@email.com</address>
         </footer>
     </div>
 </body>
